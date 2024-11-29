@@ -1,410 +1,747 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Laralink" />
+    <!-- Page Title -->
+    <title>Ali Raza - Personal Portfolio</title>
+    <!-- Favicon Icon -->
+    <link rel="icon" href="assets/img/favicon.png" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/lightgallery.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-    <!-- font awesome links -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css"
-        integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css"
-        integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/regular.min.css"
-        integrity="sha512-k2UAKyvfA7Xd/6FrOv5SG4Qr9h4p2oaeshXF99WO3zIpCsgTJ3YZELDK0gHdlJE5ls+Mbd5HL50b458z3meB/Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/svg-with-js.min.css"
-        integrity="sha512-iyaXtrpKz7FIRsICgrvVtq1vkSJT/cfLeXA0sHSQaAs0y3LdqXWlQCXTxM246mTQ/M2qpyVX3A0aRfmTt0LOCQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/brands.min.js"
-        integrity="sha512-rbApvPERCHI8cOpTOKfMLVJNlXSCs4QRu8UsJ0HieeHyNKkHtUIQTZq3hv0pT7X0SUsLrRGEUsMTTpzwpdeIuw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
-        integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/solid.min.js"
-        integrity="sha512-F0Gp9qi8/3qyo+62Pi1ZgGe6hAUxPbzOnqhhpJYAMUGDmOys95dCRCVYfQawlUeoGp1Rj/K9V7NboA9sQ9BtKw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/regular.min.js"
-        integrity="sha512-H1PxHAj13z6ipNSlyM5ftUSOSvQXeH0eOsPjEpSOcjSROPLIxhKB0PLGSAbFDqEqe2vd2xPkUnEfVtBS/RNlmw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <!-- end of links -->
-</head>
-
-<body>
-
-    <!-- mobile navbar -->
-    <section class="mobilenav" id="nav">
-        <button class="btnclos" onclick="hideNavbar()"><i class="fa fa-close" aria-hidden="true"></i></button>
-        <!-- navbar section -->
-        <div class="navbar-mobile">
-            <ul>
-                <li><a onclick="Page()"><i class="fa fa-user" aria-hidden="true"></i>&nbsp; About Me</a></li>
-                <li><a onclick="Projects()"><i class="fa fa-database" aria-hidden="true"></i>&nbsp; All Projects</a>
-                </li>
-                <li><a onclick="showresume()"><i class="fa fa-map-pin" aria-hidden="true"></i>&nbsp; My Resume</a></li>
-                <li><a onclick="showContact()"><i class="fa fa-mail-forward" aria-hidden="true"></i> Contact</a></li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- contact section start  -->
-    <section class="Contact_section" id="Contact">
-        <button class="btnclos" onclick="hideContact()"><i class="fa fa-close" aria-hidden="true"></i></button>
-        <h1>Contact Me </h1>
-        <div class="contactdata">
-
-            <!-- formstart from here -->
-            <div class="formdata">
-                <form action="">
-                    <label for="name">Enter Your Name</label><br>
-                    <input type="text" class="Inputs" placeholder="Enter Your Name ..."><br>
-                    <!-- ///// -->
-                    <label for="Email">Enter Your Email</label><br>
-                    <input type="text" id="Email" class="Inputs" placeholder="Enter Your Email..."><br>
-                    <!-- ////// -->
-                    <label for="Subject">Subject</label><br>
-                    <input id="Subject" type="text" class="Inputs" placeholder="Define Your Subject..."><br>
-                    <!-- ///// -->
-                    <label for="message">Your Message</label><br>
-                    <textarea name="" id="Message" class="textarea1" placeholder="Write Your Message..." cols="20"
-                        rows="7"></textarea><br>
-                    <button>Submit</button>
-
-                </form>
+  <body id="home" class="st-get-sidebar">
+    <!-- Start Header Section -->
+    <header class="st-site-header st-style2 st-sticky-header">
+      <div class="st-main-header">
+        <div class="container">
+          <div class="st-main-header-in">
+            <div class="st-main-header-left">
+              <div class="st-header-author">
+                <img src="assets/img/section/hero-img.png" alt="" />
+              </div>
             </div>
-
-        </div>
-
-
-    </section>
-    <!-- contact section ends here -->
-
-    <!-- Resume Section start-->
-    <section class="Resume_Section" id="Resume">
-        <button class="btnclos" onclick="hideResume()"><i class="fa fa-close" aria-hidden="true"></i></button>
-        <!-- start of resume data -->
-        <div class="resumedata">
-            <h1>My Resume</h1>
-            <div class="resumecols">
-
-                <div class="namesection">
-                    <h1>Ali Raza Muhammad Shafi</h1>
-                    <h4>Full Stack Web-Developer</h4>
-                    <div class="line"></div><br>
-                </div>
-                <div class="namesection">
-                    <h1>Summory</h1>
-                    <div class="line"></div>
-                    <p>Junior Web Developer specializing in Full Stack development. Experienced with all stages of the
-                        development cycle for dynamic web projects. Well-versed in numerous programming languages
-                        including HTML5, PHP,LARAVEL OOP, JavaScript, CSS, MySQL.</p>
-                </div>
-                <!-- contact section and Project Section -->
-
-                <div class="namesection  contactsection ">
-                    <h1>Contact</h1>
-                    <div class="line"></div>
-
-                    <div class="contactlinks">
-                        <ul>
-                            <!-- email one start -->
-                            <li>
-                                <a href="mailto:aliraza2209f@aptechgdn.net"><i class="fa fa-envelope  i "
-                                        aria-hidden="true"></i>&nbsp; Aliraza2209f@aptechgdn.net</a>
-                            </li>
-                            <!-- email one ends -->
-                            <!-- email ends -->
-                            <!-- <li>
-                        <a href="mailto:aliraza2209f@gmail.com"><i class="fa fa-envelope i " aria-hidden="true"></i>&nbsp;  Aliraza2209f@gmail.com</a>    
-                    </li> -->
-                            <!-- phone ends -->
-                            <li><a><i class="fa fa-phone i " aria-hidden="true"></i>&nbsp;+92 3353803361</a></li>
-                            <li><a><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>&nbsp;+92 3243319205</a></li>
-                            <!-- linkdin ends -->
-                            <li>
-                                <a href="#"><i class=" i fa-brands fa-linkedin"></i>&nbsp;Ali Raza Muhammad Shafi .</a>
-                            </li>
-                            <!-- github ends -->
-
-                        </ul>
-
-
-                    </div>
-
-
-                </div>
-
-                <!-- Education -->
-                <div class="namesection educ">
-                    <h1>Education</h1>
-                    <div class="line"></div>
-
-                    <div class="educationsection">
-                        <ul>
-                            <li>
-
-                                <h4 class="l1">Aptech Education Garden Center <strong>( HDSE ) .</strong></h4>
-                                <h5>2022-2023</h5>
-                            </li>
-
-                            <!-- /////////////////////////////////////////////////////////// -->
-
-                            <br>
-                            <li>
-
-                                <h4 class="li2">Private <strong>( Commerce ) .</strong></h4>
-                                <h5>2020-2021</h5>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-                <!-- education ends here -->
-
-                <!-- skills -->
-                <div class="namesection skill1">
-                    <h1>Skills</h1>
-                    <div class="line"></div>
-                    <ul class="skills skill">
-                        <li>
-                            <h6>HTML / CSS <input type="range" value="90" disabled></h6>
-                        </li>
-                        <li>
-                            <h6>JavaScript / JQuery <input type="range" value="80" disabled></h6>
-                        </li>
-                        <li>
-                            <h6>Bootstrap <input type="range" value=90 disabled></h6>
-                        </li>
-                        <li>
-                            <h6> Laravel <input type="range" value="85" disabled></h6>
-                        </li>
-                        <li>
-                            <h6>Php <input type="range" value="60" disabled></h6>
-                        </li>
-                        <li>
-                            <h6>React Native <input type="range" value="70" disabled></h6>
-                        </li>
-
-                        <li>
-                            <h6>SQl Server <input type="range" value='80' disabled></h6>
-                        </li>
-
-                        <li>
-                            <h6>MySQli <input type="range" value='80' disabled></h6>
-                        </li>
-
-                        <li>
-                            <h6>Asp.Net <input type="range" value='80' disabled></h6>
-                        </li>
-                        <li>
-                            <h6>Flutter Mobile Application <input type="range" value='80' disabled></h6>
-                        </li>
-                    </ul>
-                </div>
-                <!-- project -->
-                <div class="namesection projectoverview " style="margin-top: 20px;">
-                    <h1>Projects</h1>
-                    <div class="line"></div>
-                    <div class="projectlinks">
-
-                        <ul>
-                            <!-- shopnow -->
-                            <li>
-                                <a href="https://aliraza2023.github.io/TOYO-TOYS-PROJECT/"><i class="fa fa-globe  i" aria-hidden="true"></i>&nbsp; TOYO TOYS</a>
-                            </li>
-                            <!-- Labautomation -->
-                            <li>
-                                <a href="https://aliraza2023.github.io/Bikezan/"><i class="fa fa-globe i" aria-hidden="true"></i>&nbsp; BIKEZAN</a>
-                            </li>
-                            <!-- schools -->
-                            <li>
-                                <a href="https://aliraza2023.github.io/Cafe-Aroma/"><i class="fa fa-globe i" aria-hidden="true"></i>&nbsp; Cafe-Aroma</a>
-                            </li>
-
-                        </ul>
-
-
-                    </div>
-
-
-
-                </div>
-                <!-- end of sections -->
-
-            </div>
-
-            <!-- end of section -->
-        </div>
-
-        <div class="new">
-            <div class="lines"></div>
-        </div>
-
-    </section>
-     <!-- Resume section ends here -->
-
-    <!-- Projects Section start-->
-    <section class="Projectssection" id="Projects">
-        <button class="btnclos" onclick="HideProgrammes()"><i class="fa fa-close" aria-hidden="true"></i></button>
-        <!-- projects cards -->
-        <div class="projectdata">
-            <h1>My Projects</h1>
-            <!-- card section -->
-            <div class="cardsection">
-                <!-- card 1 -->
-                <div class="card" onmouseenter="ShowDiv()" onmouseleave="hideDiv()">
-                    <div class="hiddendiv" id="hidden">
-                        <h1>TOYO TOYS</h1>
-                        <!-- <p>A Shop where u can find anything you Want With Different Varieties. </p> -->
-                        <a><i class="fa fa-eye" aria-hidden="true"></i>&nbsp; More Details</a>
-                    </div>
-                    <!-- image mouse over div -->
-                    <div class="image">
-                        <img src="./images/p1.png" alt="">
-                    </div>
-                    <div class="text">
-                        <h5>TOYO TOYS</h5>
-                    </div>
-
-                </div>
-                 <!-- card 2 -->
-                <div class="card" onmouseenter="ShowDiv1()" onmouseleave="hideDiv1()">
-                    <div class="hiddendiv" id="hidden1">
-                        <h1>BIKEZAN</h1>
-                        <!-- <p>Buy Playstation Digital Games At Cheap Prices.</p> -->
-                        <a><i class="fa fa-eye" aria-hidden="true"></i>&nbsp; More Details</a>
-                    </div>
-                    <!-- image mouse over div -->
-                    <div class="image">
-                        <img src="./images/p2.png" alt="">
-                    </div>
-                    <div class="text">
-                        <h5>BIKEZAN</h5>
-                    </div>
-
-
-                </div>
-               <!-- card 3 -->
-                <div class="card" onmouseenter="ShowDiv2()" onmouseleave="hideDiv2()">
-                    <div class="hiddendiv" id="hidden2">
-                        <h1>CAFE AROMA</h1>
-                        <!-- <p>A Shop where u can find anything you Want With Different Varieties. </p> -->
-                        <a><i class="fa fa-eye" aria-hidden="true"></i>&nbsp; More Details</a>
-                    </div>
-                    <!-- image mouse over div -->
-                    <div class="image">
-                        <img src="./images/p3.png" alt="">
-                    </div>
-
-                    <div class="text">
-                        <h5>CAFE AROMA</h5>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <!-- end of Project Section  -->
-
-    <!-- about section start-->
-    <section class="About" id="About">
-        <button class="btnclos" onclick="HideAbout()"><i class="fa fa-close" aria-hidden="true"></i></button>
-        <div class="aboutdata">
-            <div class="imgarea">
-                <img src="./images/profile.png" width="100%" alt="">
-            </div>
-            <div class="textarea">
-                <h1>Ali Raza Muhammad Shafi</h1>
-                <h4>Full-Stack Web Developer</h4>
-                <p>Junior Web Developer specializing in Full Stack development. Experienced with all stages of the
-                    development cycle for dynamic web projects. Well-versed in numerous programming languages including
-                    HTML5, PHP,LARAVEL OOP, JavaScript, CSS, MySQL.</p>
-            </div>
-
-        </div>
-    </section>
-    <!-- end of About section -->
-
-    <div class="searcharea" id="searcharea">
-        <div class="btnclos" onclick="Showsearch1()"><i class="fa fa-close" aria-hidden="true"></i></div>
-        <div class="input">
-            <form action="">
-                <input type="text" placeholder="Search Projects...">
-                <button class="searchbtn1"><i class="fa fa-search" aria-hidden="true"></i></button>
-            </form>
-
-        </div>
-    </div>
-    <!-- header section -->
-    <section class="headersection" id="Navbarsection">
-        <!-- navbar  -->
-        <nav class="Navbarsection">
-            <div class="nav-brand"><a onclick="Home()">PortFolio</a></div>
-            <!-- nav links -->
-            <div class="nav-links">
-                <ul>
-
-                    <li><a onclick="Page()" class="hidenavbar"><i class="fa fa-user" aria-hidden="true"></i>&nbsp; About
-                            Me</a></li>
-                    <li><a onclick="Projects()" class="hidenavbar"><i class="fa fa-database"
-                                aria-hidden="true"></i>&nbsp; All Projects</a></li>
-                    <li><a onclick="showresume()" class="hidenavbar"><i class="fa fa-map-pin"
-                                aria-hidden="true"></i>&nbsp; My Resume</a></li>
-                    <li><a onclick="showContact()" class="hidenavbar"><i class="fa fa-mail-forward"
-                                aria-hidden="true"></i> Contact</a></li>
-                    <li><button class=" searchbtn" onclick="Showsearch()"><i class="fa fa-search"
-                                aria-hidden="true"></i></button></li>
-                    <li><button class="toggle searchbtn" onclick="ShowNavbar()"><i
-                                class="fa-solid fa-sliders"></i></button></li>
+            <div class="st-main-header-right">
+              <div class="st-nav">
+                <ul class="st-nav-list st-onepage-nav">
+                  <li><a href="#home" class="st-smooth-move">Home</a></li>
+                  <li><a href="#about" class="st-smooth-move">About</a></li>
+                  <li><a href="#resume" class="st-smooth-move">Resume</a></li>
+                  <li>
+                    <a href="#portfolio" class="st-smooth-move">Portfolio</a>
+                  </li>
+                  <li><a href="#contact" class="st-smooth-move">Contact</a></li>
                 </ul>
+                <div class="st-hero-btn">
+                  <a
+                    href="#contact"
+                    class="st-btn st-style2 st-color1 st-btn-md st-smooth-move"
+                    >Hire me</a
+                  >
+                </div>
+              </div>
             </div>
-        </nav>
-        <!-- nav bar ends -->
-
-        <!-- About section -->
-        <!-- text and picture section -->
-        <!-- About section -->
-
-        <div class="bannersection" id="bannersection">
-
-            <div class="bannertext">
-                <h1>Ali Raza Muhammad Shafi</h1>
-                <h3>Full-Stack Web Developer</h3>
-                <p>Professional Full-stack Web DeveloperJunior Web Developer specializing in Full Stack development.
-                    Experienced with all stages of the development cycle for dynamic web projects. Well-versed in
-                    numerous programming languages including HTML5, PHP,LARAVEL OOP, JavaScript, CSS, MySQL. </p>
-                <button class="btn2" onclick="Projects()"><i class="fa-solid fa-bars-progress"></i> &nbsp; Check My
-                    Projects</button>
-                <button class="btn1" onclick="showresume('./images/ALI RAZA CV.pdf')"><i class="fa-solid fa-file"></i>
-                    &nbsp; View My Resume.</button>
-                <!-- <button class="btn2" onclick="window.open('./images/ALI RAZA CV.pdf')"><i class="fa-solid fa-file"></i> &nbsp; Download CV.</button> -->
-            </div>
-
-            <div class="bannerimg">
-
-                <img src="./images/banner.png" alt="">
-            </div>
+          </div>
         </div>
-        <!-- text section ends -->
+      </div>
+    </header>
+    <!-- End Header Section -->
+
+    <!-- Start Hero Seciton -->
+    <section class="st-hero st-style2">
+      <div class="container">
+        <div class="st-hero-text">
+          <h1>
+            Hi, I am
+            <span
+              ><br />
+              ALI RAZA MUHAMMAD SHAFI</span
+            >
+          </h1>
+          <p>
+            Professional Full-stack Web DeveloperJunior Web Developer
+            specializing in Full Stack development. Experienced with all stages
+            of the development cycle for dynamic web projects.Well-versed in
+            numerous programming languages including HTML5, PHP,LARAVEL OOP,
+            JavaScript, CSS, MySQL.
+          </p>
+          <div class="st-hero-social-links">
+            <a href="#" class="st-social-btn">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="st-social-btn">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#" class="st-social-btn">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="background-wrap">
+        <div class="bubble x1"></div>
+        <div class="bubble x2"></div>
+        <div class="bubble x3"></div>
+        <div class="bubble x4"></div>
+        <div class="bubble x5"></div>
+        <div class="bubble x6"></div>
+        <div class="bubble x7"></div>
+        <div class="bubble x8"></div>
+        <div class="bubble x9"></div>
+        <div class="bubble x10"></div>
+      </div>
+      <div id="particles-js"></div>
     </section>
+    <!-- End Hero Seciton -->
 
+    <!-- Start About Seciton -->
+    <section id="about" class="st-about-wrap">
+      <div class="st-height-b100 st-height-lg-b80"></div>
+      <div class="container">
+        <div class="st-section-heading st-style1">
+          <h4 class="st-section-heading-title">ABOUT ME</h4>
+          <h2 class="st-section-heading-subtitle">ABOUT ME</h2>
+        </div>
+        <div class="st-height-b25 st-height-lg-b25"></div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 wow fadeInLeft">
+            <div class="st-about-img-wrap">
+              <div
+                class="st-about-img st-dynamic-bg st-bg"
+                data-src="assets/img/section/about.png"
+                style="background-size: contain"
+              ></div>
+            </div>
+            <div class="st-height-b0 st-height-lg-b30"></div>
+          </div>
+          <div class="col-lg-6">
+            <div class="st-vertical-middle">
+              <div class="st-vertical-middle-in">
+                <div class="st-text-block st-style1">
+                  <h2 class="st-text-block-title">Hi There! I'm Ali Raza</h2>
+                  <h4 class="st-text-block-subtitle">Web Developer</h4>
+                  <div class="st-text-block-text">
+                    <p>
+                      I am Web Developer specializing in Full Stack development.
+                      Experienced with all stages of the development cycle for
+                      dynamic web projects. Well-versed in numerous programming
+                      languages including HTML5, PHP,LARAVEL OOP, JavaScript,
+                      CSS, MySQL..
+                    </p>
+                  </div>
+                  <ul class="st-text-block-details st-mp0">
+                    <li><span>Birthday</span> : <span>Aug 05, 1999</span></li>
+                    <li><span>Phone</span> : <span>+92 3243319205</span></li>
+                    <li>
+                      <span>Email</span> :
+                      <span>aliraza2209f@aptechgdn.net</span>
+                    </li>
+                    <li>
+                      <span>From</span> :
+                      <span>Ranchor line, Karachi Pakistan.</span>
+                    </li>
+                    <li><span>Language</span> : <span>English, Urdu</span></li>
+                    <li><span>Freelance</span> : <span>Available</span></li>
+                  </ul>
+                  <div class="st-text-block-btn">
+                    <a href="#" class="st-btn st-style1 st-color1"
+                      >Download CV</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Seciton -->
 
-    <!-- javascript -->
-    <script src="./js/function.js"></script>
+    <!-- Start Skill Seciton -->
+    <section class="st-dark-bg">
+      <div class="st-height-b100 st-height-lg-b80"></div>
+      <div class="container">
+        <div class="st-section-heading st-style1">
+          <h4 class="st-section-heading-title">MY SKILLS</h4>
+          <h2 class="st-section-heading-subtitle">MY SKILLS</h2>
+        </div>
+        <div class="st-height-b25 st-height-lg-b25"></div>
+      </div>
 
-</body>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="st-skill-wrap">
+              <div class="st-skill-heading">
+                <h2 class="st-skill-title">
+                  All the skills that I have in that field of work are
+                  mentioned.
+                </h2>
+                <div class="st-skill-subtitle">
+                  I am Web Developer specializing in Full Stack development.
+                  Experienced with all stages of the development cycle for
+                  dynamic web projects. Well-versed in numerous programming
+                  languages including HTML5, PHP,LARAVEL OOP, JavaScript, CSS,
+                  MySQL.
+                </div>
+              </div>
+              <!-- .st-skill-heading -->
+            </div>
+          </div>
 
+          <!-- Progressbar -->
+
+          <div class="col-lg-6">
+            <div class="st-height-b0 st-height-lg-b30"></div>
+            <div class="st-progressbar-wrap">
+              <div class="st-single-progressbar">
+                <div class="st-progressbar-heading">
+                  <h3 class="st-progressbar-title">HTML & CSS , JAVASCRIPT</h3>
+                  <div
+                    class="st-progressbar-percentage wow fadeInLeft"
+                    data-wow-duration="1.5s"
+                    data-wow-delay="0.5s"
+                  >
+                    95%
+                  </div>
+                </div>
+                <div class="st-progressbar" data-progress="95">
+                  <div class="st-progressbar-in wow fadeInLeft"></div>
+                </div>
+              </div>
+              <!-- .st-single-progressbar -->
+              <div class="st-height-b30 st-height-lg-b20"></div>
+              <div class="st-single-progressbar">
+                <div class="st-progressbar-heading">
+                  <h3 class="st-progressbar-title">PHP & LARAVEL</h3>
+                  <div
+                    class="st-progressbar-percentage wow fadeInLeft"
+                    data-wow-duration="1.5s"
+                    data-wow-delay="0.5s"
+                  >
+                    75%
+                  </div>
+                </div>
+                <div class="st-progressbar" data-progress="75">
+                  <div class="st-progressbar-in wow fadeInLeft"></div>
+                </div>
+              </div>
+              <!-- .st-single-progressbar -->
+              <div class="st-height-b30 st-height-lg-b20"></div>
+              <div class="st-single-progressbar">
+                <div class="st-progressbar-heading">
+                  <h3 class="st-progressbar-title">FLUTTER & DART</h3>
+                  <div
+                    class="st-progressbar-percentage wow fadeInLeft"
+                    data-wow-duration="1.5s"
+                    data-wow-delay="0.5s"
+                  >
+                    90%
+                  </div>
+                </div>
+                <div class="st-progressbar" data-progress="90">
+                  <div class="st-progressbar-in wow fadeInLeft"></div>
+                </div>
+              </div>
+              <!-- .st-single-progressbar -->
+              <div class="st-height-b30 st-height-lg-b20"></div>
+              <div class="st-single-progressbar">
+                <div class="st-progressbar-heading">
+                  <h3 class="st-progressbar-title">UI & UX Design</h3>
+                  <div
+                    class="st-progressbar-percentage wow fadeInLeft"
+                    data-wow-duration="1.5s"
+                    data-wow-delay="0.5s"
+                  >
+                    85%
+                  </div>
+                </div>
+                <div class="st-progressbar" data-progress="85">
+                  <div class="st-progressbar-in wow fadeInLeft"></div>
+                </div>
+              </div>
+              <!-- .st-single-progressbar -->
+              <div class="st-height-b30 st-height-lg-b20"></div>
+              <div class="st-single-progressbar">
+                <div class="st-progressbar-heading">
+                  <h3 class="st-progressbar-title">ASP.NET CORE & MVC</h3>
+                  <div
+                    class="st-progressbar-percentage wow fadeInLeft"
+                    data-wow-duration="1.5s"
+                    data-wow-delay="0.5s"
+                  >
+                    80%
+                  </div>
+                </div>
+                <div class="st-progressbar" data-progress="80">
+                  <div class="st-progressbar-in wow fadeInLeft"></div>
+                </div>
+              </div>
+              <!-- .st-single-progressbar -->
+              <div class="st-height-b30 st-height-lg-b20"></div>
+              <div class="st-single-progressbar">
+                <div class="st-progressbar-heading">
+                  <h3 class="st-progressbar-title">Mysql & Sql Server</h3>
+                  <div
+                    class="st-progressbar-percentage wow fadeInLeft"
+                    data-wow-duration="1.5s"
+                    data-wow-delay="0.5s"
+                  >
+                    90%
+                  </div>
+                </div>
+                <div class="st-progressbar" data-progress="90">
+                  <div class="st-progressbar-in wow fadeInLeft"></div>
+                </div>
+              </div>
+              <!-- .st-single-progressbar -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Skill Seciton -->
+
+    <!-- Start Resume Seciton -->
+    <section id="resume" class="st-dark-bg">
+      <div class="st-height-b100 st-height-lg-b80"></div>
+      <div class="container">
+        <div class="st-section-heading st-style1">
+          <h4 class="st-section-heading-title">RESUME</h4>
+          <h2 class="st-section-heading-subtitle">RESUME</h2>
+        </div>
+        <div class="st-height-b25 st-height-lg-b25"></div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <!-- Experience -->
+          <div class="col-lg-6">
+            <div class="st-resume-wrap">
+              <div class="st-resume-heading">
+                <img src="assets/img/icon/resume-icon1.png" alt="resume-icon" />
+                <h2 class="st-resume-heading-title">Experience</h2>
+              </div>
+
+              <div class="st-height-b50 st-height-lg-b30"></div>
+
+              <div class="st-resume-timeline-wrap">
+                <div class="st-resume-timeline">
+                  <h3 class="st-resume-timeline-title">
+                    Frontend Web Developer Intern
+                  </h3>
+                  <div class="st-resume-timeline-duration">
+                    08/2023 – 09/2023
+                  </div>
+                  <h4 class="st-resume-timeline-subtitle">Codesoft</h4>
+                  <div class="st-resume-timeline-text">
+                    <p>
+                      Contributed to the development of key frontend projects,
+                      including a landing page, a calculator, and a To-Do List
+                      application.
+                      <br />
+
+                      Designed and implemented responsive layouts using HTML,
+                      CSS, and JavaScript to ensure compatibility across various
+                      devices and screen sizes.
+                      <br />
+
+                      Worked collaboratively with the team to enhance the user
+                      experience, adhering to UI/UX best practices for each
+                      project.
+                    </p>
+                  </div>
+                </div>
+                <!-- st-resume-timeline -->
+                <!-- <div class="st-height-b50 st-height-lg-b30"></div>
+                <div class="st-resume-timeline">
+                  <h3 class="st-resume-timeline-title">Product Designer</h3>
+                  <div class="st-resume-timeline-duration">
+                    Jan 2016 - December 2019
+                  </div>
+                  <h4 class="st-resume-timeline-subtitle">
+                    Langosh, Sipes and Raynor
+                  </h4>
+                  <div class="st-resume-timeline-text">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc ligula nulla, tincidunt id faucibus sed, suscipit
+                      feugiat turpis.
+                    </p>
+                  </div>
+                </div> -->
+                <!-- st-resume-timeline -->
+                <!-- <div class="st-height-b50 st-height-lg-b30"></div>
+                <div class="st-resume-timeline">
+                  <h3 class="st-resume-timeline-title">UI/UX Designer</h3>
+                  <div class="st-resume-timeline-duration">
+                    Jan 2014 - December 2015
+                  </div>
+                  <h4 class="st-resume-timeline-subtitle">
+                    Strosin, Maggio and Homenick
+                  </h4>
+                  <div class="st-resume-timeline-text">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc ligula nulla, tincidunt id faucibus sed, suscipit
+                      feugiat turpis.
+                    </p>
+                  </div>
+                </div> -->
+                <!-- st-resume-timeline -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div class="col-lg-6">
+            <div class="st-height-b0 st-height-lg-b50"></div>
+            <div class="st-resume-wrap">
+              <div class="st-resume-heading">
+                <img src="assets/img/icon/resume-icon2.png" alt="resume-icon" />
+                <h2 class="st-resume-heading-title">Education</h2>
+              </div>
+              <div class="st-height-b50 st-height-lg-b30"></div>
+
+              <div class="st-resume-timeline-wrap">
+                <div class="st-resume-timeline">
+                  <h3 class="st-resume-timeline-title">
+                    Matriculation (Science)
+                  </h3>
+                  <div class="st-resume-timeline-duration">2017 – 2018</div>
+                  <h4 class="st-resume-timeline-subtitle">H.M Public School</h4>
+                  <!-- <div class="st-resume-timeline-text">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc ligula nulla, tincidunt id faucibus sed, suscipit
+                      feugiat turpis.
+                    </p>
+                  </div> -->
+                </div>
+                <!-- st-resume-timeline -->
+                <div class="st-height-b50 st-height-lg-b30"></div>
+                <div class="st-resume-timeline">
+                  <h3 class="st-resume-timeline-title">
+                    Intermediate ( Commerce)
+                  </h3>
+                  <div class="st-resume-timeline-duration">2021 – 2022</div>
+                  <h4 class="st-resume-timeline-subtitle">Private</h4>
+                  <!-- <div class="st-resume-timeline-text">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc ligula nulla, tincidunt id faucibus sed, suscipit
+                      feugiat turpis.
+                    </p>
+                  </div> -->
+                </div>
+                <!-- st-resume-timeline -->
+                <div class="st-height-b50 st-height-lg-b30"></div>
+                <div class="st-resume-timeline">
+                  <h3 class="st-resume-timeline-title">
+                    Diploma in Software Engineering
+                  </h3>
+                  <div class="st-resume-timeline-duration">2023 - 2025</div>
+                  <h4 class="st-resume-timeline-subtitle">
+                    Aptech Education Garden Center ( ADSE )
+                  </h4>
+                  <!-- <div class="st-resume-timeline-text">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc ligula nulla, tincidunt id faucibus sed, suscipit
+                      feugiat turpis.
+                    </p>
+                  </div> -->
+                </div>
+                <!-- st-resume-timeline -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="st-height-b100 st-height-lg-b80"></div>
+    </section>
+    <!-- End Resume Seciton -->
+
+    <!-- Start PROJECTS Seciton -->
+    <section id="portfolio">
+      <div class="st-height-b100 st-height-lg-b80"></div>
+      <div class="container">
+        <div class="st-section-heading st-style1">
+          <h4 class="st-section-heading-title">PROJECTS</h4>
+          <h2 class="st-section-heading-subtitle">PROJECTS</h2>
+        </div>
+        <div class="st-height-b25 st-height-lg-b25"></div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <!-- Portfolio Item Start -->
+          <div class="col-lg-4 col-md-6">
+            <div class="st-portfolio-single st-style1 st-lightgallery">
+              <div class="st-portfolio-item">
+                <!-- Corrected: Wrap the image in an anchor tag -->
+                <a
+                  href="https://aliraza2023.github.io/TOYO-TOYS-PROJECT/"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/portfolio/portfolio1.png"
+                    alt="Project"
+                    style="cursor: pointer"
+                  />
+                </a>
+              </div>
+              <p class="text-center" style="font-size: larger; line-height: 3">
+                TOYO-TOYS WEBSITE
+              </p>
+            </div>
+          </div>
+          <!-- Portfolio Item End -->
+
+          <!-- Portfolio Item Start -->
+          <div class="col-lg-4 col-md-6">
+            <div class="st-portfolio-single st-style1 st-lightgallery">
+              <div class="st-portfolio-item">
+                <!-- Corrected: Wrap the image in an anchor tag -->
+                <a
+                  href="https://aliraza2023.github.io/Bikezan/"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/portfolio/portfolio2.png"
+                    alt="Project"
+                    style="cursor: pointer"
+                  />
+                </a>
+              </div>
+              <p class="text-center" style="font-size: larger; line-height: 3">
+                BIKEZEN WEBSITE
+              </p>
+            </div>
+          </div>
+          <!-- Portfolio Item End -->
+
+          <!-- Portfolio Item Start -->
+          <div class="col-lg-4 col-md-6">
+            <div class="st-portfolio-single st-style1 st-lightgallery">
+              <div class="st-portfolio-item">
+                <!-- Corrected: Wrap the image in an anchor tag -->
+                <a
+                  href="https://aliraza2023.github.io/Cafe-Aroma/"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/portfolio/portfolio3.png"
+                    alt="Project"
+                    style="cursor: pointer"
+                  />
+                </a>
+              </div>
+              <p class="text-center" style="font-size: larger; line-height: 3">
+                CAFE AROMA WEBSITE
+              </p>
+            </div>
+          </div>
+          <!-- Portfolio Item End -->
+
+          <!-- Portfolio Item Start -->
+          <div class="col-lg-4 col-md-6">
+            <div class="st-portfolio-single st-style1 st-lightgallery">
+              <div class="st-portfolio-item">
+                <!-- Corrected: Wrap the image in an anchor tag -->
+                <a
+                  href="https://aliraza2023.github.io/Gym-Website/"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/portfolio/portfolio4.png"
+                    alt="Project"
+                    style="cursor: pointer"
+                  />
+                </a>
+              </div>
+              <p class="text-center" style="font-size: larger; line-height: 3">
+                FITNESS OKAY WEBSITE
+              </p>
+            </div>
+          </div>
+          <!-- Portfolio Item End -->
+        </div>
+      </div>
+
+      <div class="st-height-b100 st-height-lg-b80"></div>
+    </section>
+    <!-- End PROJECTS Seciton -->
+
+    <!-- Start Contact Seciton -->
+    <section id="contact" class="st-dark-bg">
+      <div class="st-height-b100 st-height-lg-b80"></div>
+      <div class="container">
+        <div class="st-section-heading st-style1">
+          <h4 class="st-section-heading-title">CONTACT ME</h4>
+          <h2 class="st-section-heading-subtitle">CONTACT ME</h2>
+        </div>
+        <div class="st-height-b25 st-height-lg-b25"></div>
+      </div>
+
+      <!-- Contact Container -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="st-contact-title">Just say Hello</h3>
+            <div id="st-alert"></div>
+            <form
+              action="#"
+              method="POST"
+              class="st-contact-form"
+              id="contact-form"
+            >
+              <div class="st-form-field">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="st-form-field">
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="st-form-field">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Your Subject"
+                  required
+                />
+              </div>
+              <div class="st-form-field">
+                <textarea
+                  cols="30"
+                  rows="10"
+                  id="msg"
+                  name="msg"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <button
+                class="st-btn st-style1 st-color1"
+                type="submit"
+                id="submit"
+                name="submit"
+              >
+                Send message
+              </button>
+            </form>
+          </div>
+          <div class="st-height-b0 st-height-lg-b30"></div>
+
+          <div class="col-lg-6">
+            <div class="st-height-b0 st-height-lg-b40"></div>
+            <h3 class="st-contact-title">Contact Info</h3>
+            <!-- <div class="st-contact-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              ligula nulla tincidunt id faucibus sed suscipit feugiat.
+            </div> -->
+            <div class="st-contact-info-wrap">
+              <div class="st-single-contact-info">
+                <i class="fas fa-envelope"></i>
+                <div class="st-single-info-details">
+                  <h4>Email</h4>
+                  <a href="#">aliraza2209f@aptechgdn.net</a>
+                </div>
+              </div>
+              <div class="st-single-contact-info">
+                <i class="fas fa-phone-alt"></i>
+                <div class="st-single-info-details">
+                  <h4>Phone</h4>
+                  <span>+92 3243319205</span>
+                </div>
+              </div>
+              <div class="st-single-contact-info">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="st-single-info-details">
+                  <h4>Address</h4>
+                  <span>Ranchor line, Karachi Pakistan.</span>
+                </div>
+              </div>
+              <div class="st-social-info">
+                <div class="st-social-text">
+                  Visite my social profile and get connected
+                </div>
+                <div class="st-social-link">
+                  <a href="#" class="st-social-btn active">
+                    <span class="st-social-icon"
+                      ><i class="fab fa-facebook-f"></i
+                    ></span>
+                    <span class="st-icon-name">Facebook</span>
+                  </a>
+                  <a href="#" class="st-social-btn">
+                    <span class="st-social-icon"
+                      ><i class="fab fa-instagram"></i
+                    ></span>
+                    <span class="st-icon-name">Instagram</span>
+                  </a>
+                  <a href="#" class="st-social-btn">
+                    <span class="st-social-icon"
+                      ><i class="fab fa-whatsapp"></i
+                    ></span>
+                    <span class="st-icon-name">Whatsapp</span>
+                  </a>
+                  <a href="#" class="st-social-btn">
+                    <span class="st-social-icon"
+                      ><i class="fab fa-linkedin"></i
+                    ></span>
+                    <span class="st-icon-name">LinkedIn</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="st-height-b100 st-height-lg-b80"></div>
+    </section>
+    <!-- End Contact Seciton -->
+
+    <!-- Start Footer Seciton -->
+    <footer>
+      <div class="container">
+        <div class="st-copyright-wrap text-center">
+          <div class="st-copyright-text">
+            © 2024. Designed by Ali Raza. All right reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer Seciton -->
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/jquery.slick.min.js"></script>
+    <script src="assets/js/lightgallery.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/particles.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
